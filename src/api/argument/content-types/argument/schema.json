@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "arguments",
+  "info": {
+    "singularName": "argument",
+    "pluralName": "arguments",
+    "displayName": "Arguments"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "direction": {
+      "type": "enumeration",
+      "enum": [
+        "For",
+        "Against"
+      ],
+      "required": true
+    },
+    "summary": {
+      "type": "string",
+      "required": true
+    },
+    "details": {
+      "type": "richtext"
+    },
+    "projects": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::project.project",
+      "mappedBy": "arguments"
+    }
+  }
+}

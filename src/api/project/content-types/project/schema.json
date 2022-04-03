@@ -64,6 +64,33 @@
       "relation": "manyToMany",
       "target": "api::tag.tag",
       "inversedBy": "projects"
+    },
+    "consensus_mechanisms": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::consensus-mechanism.consensus-mechanism"
+    },
+    "arguments": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::argument.argument",
+      "inversedBy": "projects"
+    },
+    "tokens": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::token.token"
+    },
+    "Endorsement": {
+      "displayName": "Endorsements",
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "endorsements.endorsements"
     }
   }
 }
