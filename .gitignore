@@ -106,6 +106,7 @@ coverage
 # Strapi
 ############################
 
+.editorconfig
 .env
 license.txt
 exports

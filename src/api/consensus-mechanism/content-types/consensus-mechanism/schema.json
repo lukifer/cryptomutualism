@@ -1,10 +1,11 @@
 {
   "kind": "collectionType",
-  "collectionName": "tags",
+  "collectionName": "consensus_mechanisms",
   "info": {
-    "singularName": "tag",
-    "pluralName": "tags",
-    "displayName": "Tags"
+    "singularName": "consensus-mechanism",
+    "pluralName": "consensus-mechanisms",
+    "displayName": "Consensus Mechanisms",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,17 +16,7 @@
     }
   },
   "attributes": {
-    "Name": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "string",
-      "unique": true,
-      "required": true
-    },
-    "Slug": {
+    "name": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -35,7 +26,7 @@
       "required": true,
       "unique": true
     },
-    "Description": {
+    "summary": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -43,19 +34,21 @@
       },
       "type": "richtext"
     },
-    "Color": {
+    "url": {
       "pluginOptions": {
         "i18n": {
-          "localized": false
+          "localized": true
         }
       },
       "type": "string"
     },
-    "projects": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::project.project",
-      "mappedBy": "tags"
+    "algorithm": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
     }
   }
 }

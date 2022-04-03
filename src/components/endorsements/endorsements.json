@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_endorsements_endorsements",
+  "info": {
+    "displayName": "Endorsements",
+    "icon": "child"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "details": {
+      "type": "richtext"
+    }
+  }
+}
